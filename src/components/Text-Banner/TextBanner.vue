@@ -35,14 +35,15 @@ setup () {
 <template>
   <div className="font-poppins bg-red-200 w-full text-banner h-screen grid place-items-center content-center" id="first">
 
-   <h1 class="font-medium leading-tight text-5xl mt-0 mb-5 relative">
+   <h2 class="font-medium leading-tight text-5xl mt-0 mb-5 relative">
       <img src="../../assets/paper-plane.png" class="paper-plane w-20 absolute top-5 -left-28" />
-     Hi, Welcome</h1>
-   <h2  class="headingText font-medium leading-tight text-8xl mt-0 mb-5 " >Stay Bold </h2>
-   <h2 class=" headingText font-medium leading-tight text-8xl mt-0 mb-5 " >Have a 
+     <span id="welcome-text">Hi, Welcome</span></h2>
+
+   <h1  class="headingText font-medium leading-tight text-8xl mt-0 mb-5 w-96 text-center" >Stay Bold!!
+      <span class="block">Have a </span>
      <span id="cursor">_</span>
-     <span id="greet"></span>
+     <span id="greet" class="text-9xl"></span>
      {{today}}
-   </h2>
+   </h1>
   </div>
 </template>

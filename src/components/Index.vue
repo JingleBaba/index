@@ -20,10 +20,12 @@ export default {
         pinSpacing: false
       },
     });
-    mainTimeline.fromTo(".headingText", {opacity:1 },{duration:2, opacity:0})
+    mainTimeline.fromTo(".headingText", {duration:1, opacity:1, delay: -2 },{duration:4, opacity:0})
+    mainTimeline.fromTo(".welcome-text", {duration:1, opacity:1 , delay: -2},{duration:2, opacity:0})
+    mainTimeline.to("#welcome-text", {duration:0.5 ,opacity:1, text:"Take care !!"})
     mainTimeline.to(".paper-plane", {
       duration: 15,
-      delay: -2,
+      delay: -6,
         motionPath: {
         path: [
           {x: (window.innerWidth/8)*3, y: 100},
