@@ -20,9 +20,10 @@ export default {
         pinSpacing: false
       },
     });
-    
+    mainTimeline.fromTo(".headingText", {opacity:1 },{duration:2, opacity:0})
     mainTimeline.to(".paper-plane", {
-      duration: 8,
+      duration: 15,
+      delay: -2,
         motionPath: {
         path: [
           {x: (window.innerWidth/8)*3, y: 100},
@@ -34,7 +35,8 @@ export default {
       autoRotate: true
     }
     });
-    mainTimeline.to("#first", { y: 550, delay: -4 });
+    mainTimeline.to("#first", {duration:1, y: 550, delay: -9 });
+   
   },
 };
 </script>
