@@ -35,8 +35,8 @@ setup () {
 <template>
   <div className="font-poppins bg-red-200 w-full text-banner h-screen grid place-items-center content-center" id="first">
 
-   <h2 class="font-medium leading-tight text-5xl mt-0 mb-5 relative">
-      <img src="../../assets/paper-plane.png" class="paper-plane w-20 absolute top-5 -left-28" />
+   <h2 class="font-medium leading-tight text-5xl mt-0 mb-5 relative inline-block w-96 text-center">
+      <img src="../../assets/paper-plane.png" class="paper-plane w-20 absolute top-16 -left-26" />
      <span id="welcome-text">Hi, Welcome</span></h2>
 
    <h1  class="headingText font-medium leading-tight text-8xl mt-0 mb-5 w-96 text-center" >Stay Bold!!
