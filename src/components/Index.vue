@@ -44,7 +44,7 @@ export default {
 </script>
 
 <template>
-  <div className="font-poppins animation-container" style="min-height: 160vh">
+  <div className="font-poppins animation-container bg-red-100" style="min-height: 160vh">
     <text-banner />
   </div>
 </template>
