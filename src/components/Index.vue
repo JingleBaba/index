@@ -20,7 +20,7 @@ export default {
         pinSpacing: false
       },
     });
-    mainTimeline.fromTo(".headingText", {opacity:1, delay: -3 },{duration:6, opacity:0})
+    mainTimeline.fromTo(".headingText", {opacity:1, delay: -3 },{duration:4, opacity:0})
     mainTimeline.fromTo(".welcome-text", {opacity:1 , delay: -1},{duration:2, opacity:0})
     mainTimeline.to("#welcome-text", {duration:0.5 ,opacity:1, text:"Take care !!"})
     mainTimeline.to(".paper-plane", {
