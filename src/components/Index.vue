@@ -25,7 +25,7 @@ export default {
     mainTimeline.fromTo(".welcome-text", {opacity:1 , delay: -1},{duration:2, opacity:0})
     mainTimeline.to("#welcome-text", {duration:1.5 ,opacity:1, text:"Take care !!"})
     mainTimeline.to(".paper-plane", {
-      duration: 18,
+      duration: 15,
       delay: -8,
         motionPath: {
         path: [
@@ -38,7 +38,7 @@ export default {
       autoRotate: true
     }
     });
-    mainTimeline.to("#first", {duration:8, y: (document.getElementById('first')).offsetHeight + 650, delay: -9});
+    mainTimeline.to("#first", {duration:8, y: (document.getElementById('first')).offsetHeight, delay: -9});
    
   },
 };
