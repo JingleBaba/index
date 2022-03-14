@@ -17,14 +17,15 @@ export default {
         pin: true, // pin the trigger element while active
         scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar,
         pinSpacer: false,
-        pinSpacing: false
+        pinSpacing: false,
+        snap: true //disable this for auto animation completion
       },
     });
     mainTimeline.fromTo(".headingText", {opacity:1, delay: -3 },{duration:4, opacity:0})
     mainTimeline.fromTo(".welcome-text", {opacity:1 , delay: -1},{duration:2, opacity:0})
-    mainTimeline.to("#welcome-text", {duration:0.5 ,opacity:1, text:"Take care !!"})
+    mainTimeline.to("#welcome-text", {duration:1.5 ,opacity:1, text:"Take care !!"})
     mainTimeline.to(".paper-plane", {
-      duration: 15,
+      duration: 18,
       delay: -8,
         motionPath: {
         path: [
@@ -37,7 +38,7 @@ export default {
       autoRotate: true
     }
     });
-    mainTimeline.to("#first", {duration:1, y: 550, delay: -9 });
+    mainTimeline.to("#first", {duration:8, y: (document.getElementById('first')).offsetHeight + 650, delay: -9});
    
   },
 };

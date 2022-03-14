@@ -24,7 +24,7 @@ setup () {
    const greetingArr = ['amazing', 'superb', 'Fantastic', 'Bravo'];
    greetingArr.forEach(greeting => {
      const tl = gsap.timeline({yoyo:true, repeat:1});
-     tl.to('#greet', { duration: 2, text: greeting});
+     tl.to('#greet', { duration: 1, text: greeting});
      masterTl.add(tl);
    })
  }
