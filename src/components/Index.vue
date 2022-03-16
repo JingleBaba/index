@@ -36,13 +36,13 @@ export default {
     console.log(container);
       homepageTimeline.fromTo(container, {
         x: '100vw',
-        ease: "none", duration: 2 
-      }, {x: -'200vw', duration: 3})
+        ease: "none", duration: 2
+      }, {x: -'200vw', duration: 4})
 
       homepageTimeline.to('.text-banner', {
         "filter": "blur(5px)"
       , duration: 2,
-      delay: -3
+      delay: -3.25
       })
 
   },
