@@ -29,7 +29,7 @@ export default {
           {x: (window.innerWidth/8)*4, y: -100},
         ], 
       curviness: 2,
-      autoRotate: true
+      autoRotate: true,
     }
     });
     let container = document.getElementById('homepage');
@@ -40,9 +40,9 @@ export default {
       }, {x: -'200vw', duration: 4})
 
       homepageTimeline.to('.text-banner', {
-        "filter": "blur(5px)"
+        "filter": "blur(10px)"
       , duration: 2,
-      delay: -3.25
+      delay: -3.35
       })
 
   },
